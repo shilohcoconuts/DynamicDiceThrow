@@ -15,11 +15,15 @@ class ButtonFragment : Fragment() {
         ViewModelProvider(requireActivity())[DieViewModel::class.java]
     }
 
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         return inflater.inflate(R.layout.fragment_button, container, false).apply {
+
+
+
             findViewById<Button>(R.id.rollButton).setOnClickListener {
 
                 // Generate a random die roll
